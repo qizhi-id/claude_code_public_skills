@@ -12,7 +12,7 @@ STANDARDS_COMMIT = "a07f432d5cf645a281f54ff35a219b85f0234667"
 WORKFLOW = ".github/workflows/qizhi-governance.yml"
 LOCK = ".qizhi/governance.lock.json"
 DOCUMENT = ".qizhi/GIT_GOVERNANCE.md"
-PUBLIC_REUSABLE = "Asteroid-B-612-ZS/claude_code_public_skills/.github/workflows/qizhi-reusable.yml"
+PUBLIC_REUSABLE = "qizhi-id/claude_code_public_skills/.github/workflows/qizhi-reusable.yml"
 
 
 def audit(root: Path) -> list[str]:
@@ -29,7 +29,7 @@ def audit(root: Path) -> list[str]:
         ("standards_version", STANDARDS_VERSION),
         ("standards_tag", "v1.3.0"),
         ("standards_commit", STANDARDS_COMMIT),
-        ("executor_repository", "Asteroid-B-612-ZS/claude_code_public_skills"),
+        ("executor_repository", "qizhi-id/claude_code_public_skills"),
     ):
         if manifest.get(key) != expected:
             issues.append(f"QZ-ADOPT-003: {key} differs from pinned standard")

@@ -10,7 +10,7 @@ import sys
 
 from bootstrap import install
 
-EXECUTOR_SHA = "1b6ec2336d3e80a589d69879b9bd5b8c63488701"
+EXECUTOR_SHA = "14757dec9aeaaa803105a027beb2abbb5e921139"
 PROJECT_KINDS = ("generic", "python", "android", "skill", "miniapp")
 GITIGNORE = {
     "generic": ".DS_Store\n*.log\n.env\n",

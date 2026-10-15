@@ -22,7 +22,7 @@ Git-only policy: Standards **v1.3.0** at commit **a07f432d5cf645a281f54ff35a219b
 7. For pre-adoption in-flight PRs, recorded legacy PR number exceptions apply only to
    Git subject/branch checks; existing project CI checks remain mandatory.
 
-Canonical source: https://github.com/Asteroid-B-612-ZS/QiZhi_CostTools_Standards/blob/v1.3.0/standards/GIT_WORKFLOW_GOVERNANCE_STANDARD.md
+Canonical source: https://github.com/qizhi-id/QiZhi_CostTools_Standards/blob/v1.3.0/standards/GIT_WORKFLOW_GOVERNANCE_STANDARD.md
 Pinned executor: see \`.qizhi/governance.lock.json\`.
 """
 
@@ -45,7 +45,7 @@ def install(root: Path, executor_sha: str, *, legacy: list[int],
             "standards_version": "1.3.0",
             "standards_tag": "v1.3.0",
             "standards_commit": STANDARDS_COMMIT,
-            "executor_repository": "Asteroid-B-612-ZS/claude_code_public_skills",
+            "executor_repository": "qizhi-id/claude_code_public_skills",
             "executor_commit": executor_sha,
             "legacy_pr_numbers": sorted(set(legacy))
         }, ensure_ascii=False, indent=2) + "\n",

@@ -48,7 +48,7 @@ QQ Bot / 手动输入
 ### 一键安装
 
 ```powershell
-git clone https://github.com/Asteroid-B-612-ZS/claude_code_public_skills.git
+git clone https://github.com/qizhi-id/claude_code_public_skills.git
 cd claude_code_public_skills/cost-engineering
 powershell -File install.ps1
 ```

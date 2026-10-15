@@ -16,7 +16,7 @@ jobs:
       - name: Get immutable public governance executor
         uses: actions/checkout@v4
         with:
-          repository: Asteroid-B-612-ZS/claude_code_public_skills
+          repository: qizhi-id/claude_code_public_skills
           ref: 92e3f275503c916f7acf7d1f6dbb5b2f13120102
           path: .qizhi-executor
           persist-credentials: false

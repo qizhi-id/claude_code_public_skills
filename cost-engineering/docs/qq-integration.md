@@ -6,7 +6,7 @@
 
 | 组件 | 要求 | 安装 |
 |------|------|------|
-| cc-connect | v1.2.2+ | [GitHub Release](https://github.com/Asteroid-B-612-ZS/cc-connect/releases) |
+| cc-connect | v1.2.2+ | [GitHub Release](https://github.com/chenhg5/cc-connect/releases) |
 | QQ 机器人 | 已审核通过 | [QQ 开放平台](https://q.qq.com/) |
 | ffmpeg | 语音功能必须 | `winget install ffmpeg` |
 | Python | 3.12+ | 已有 |
@@ -41,7 +41,7 @@ QQ 用户（语音/文字/图片/文件）
 
 ```powershell
 # 下载最新版 cc-connect
-# 从 https://github.com/Asteroid-B-612-ZS/cc-connect/releases 下载 Windows 版本
+# 从 https://github.com/chenhg5/cc-connect/releases 下载 Windows 版本
 # 放到任意目录，如 D:\AI\cc-connect\
 ```
 

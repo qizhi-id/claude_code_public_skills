@@ -10,7 +10,7 @@ Claude Code 公开技能集合。
 
 ## QiZhi Git 治理执行器（public，独立于 Skill 业务）
 
-`qizhi-governance/` 是 Standards [v1.3.0](https://github.com/Asteroid-B-612-ZS/QiZhi_CostTools_Standards/releases/tag/v1.3.0) 的**只读、公开可复用的 Git 校验器副本**，不会公开私有业务资料或改变造价/汽车项目版本。原始 `validate_git_workflow.py` 与 `validate_branch_name.py` 逐字复制自正式 v1.3.0，其 Git Blob SHA 在审核中验证相同。
+`qizhi-governance/` 是 Standards [v1.3.0](https://github.com/qizhi-id/QiZhi_CostTools_Standards/releases/tag/v1.3.0) 的**只读、公开可复用的 Git 校验器副本**，不会公开私有业务资料或改变造价/汽车项目版本。原始 `validate_git_workflow.py` 与 `validate_branch_name.py` 逐字复制自正式 v1.3.0，其 Git Blob SHA 在审核中验证相同。
 
 `bootstrap.py` 为任何本地新/旧项目生成 `.qizhi/governance.lock.json`、CI、AGENTS/CLAUDE 入口；`audit.py` 在 PR 和每周检查安装完整性。所有接入方使用 **完整 40 位 commit SHA** 固定调用公开复用工作流，绝不运行未固定版本的 main。复制执行器遵循标准库的治理，不改变任何业务模块的 `standards.baseline`。
 
@@ -23,7 +23,7 @@ Claude Code 公开技能集合。
 ```bash
 python qizhi-governance/create_project.py MyProject --kind python --root .
 # 如需立即创建 GitHub 仓库（需要先 gh auth login）：
-python qizhi-governance/create_project.py MyProject --kind python --root . --owner Asteroid-B-612-ZS --create-remote
+python qizhi-governance/create_project.py MyProject --kind python --root . --owner qizhi-id --create-remote
 ```
 
 上述命令创建项目目录、初始化 Git、加入冻结的 Git Governance 规则与每周巡检入口，并提交首个 Git Commit。`--create-remote` 是明确的远程创建授权；默认只在本地创建，不会触碰线上任何仓库。未来 Claude / GPT 应使用这一入口创建项目，不得自行遗漏治理文件。第三方创建的 GitHub 仓库仍须单独运行导入脚本。
